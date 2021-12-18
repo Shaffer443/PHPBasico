@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="_css/estilo.css"/>
+    <meta charset="UTF-8"/>
+    <title>Curso de PHP - CursoemVideo.com | AULA: 10</title>
+</head>
+<body>
+    
+    <div>
+        <p>Ler um número e qual operação realizar: dobro, cubo ou raiz.</p>
+
+        <form method="get" action="exerc010.php"> <!--Meto get: solicita a inserção de algo e action: Refente onde será a ação do "get"-->
+
+            Digite um valor: <input type="number" name="num"><br> <!--Informando o tipo e escolhendo um nome para este tipo "numero". logo, não aceita inserir letra-->
+
+                <fieldset> <!--Cria uma caixa de opções -->
+
+                    <input type="radio" name="operacao" id="dobro" value="1"> <!--Cria uma das opções da caixa de seleção-->
+                    <label for="dobro">Dobro</label> <!--FOR tem que estar linkado com o id da opção input-->
+                    
+                        <input type="radio" name="operacao" id="cubo" value="2"> <!--Cria uma das opções da caixa de seleção-->
+                        <label for="cubo">Cubo</label> <!--FOR tem que estar linkado com o id da opção input-->     
+
+                            <input type="radio" name="operacao" id="raiz" value="3"> <!--Cria uma das opções da caixa de seleção-->
+                            <label for="raiz">Raiz Quadrada</label> <!--FOR tem que estar linkado com o id da opção input-->    
+
+                <!--Todos tem que ter o mesmo "nome" para fazer a sintaxe da mesmo função, no caso, da mesmo  opção--> 
+                <!--LABEL cria um opção clicável-->  
+                <!--VALUE indica o valor da opção do switch-->         
+                </fieldset>
+
+            <input type="submit" value="Calcular"> <!--Novo input. Aqui se solicita um botão, com o nome calcular-->
+        
+        </form>
+
+    </div>
+</body>
+</html>
+ 

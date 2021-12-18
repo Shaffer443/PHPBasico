@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="_css/estilo.css"/>
+    <meta charset="UTF-8"/>
+    <title>Curso de PHP - CursoemVideo.com | AULA: 10</title>
+</head>
+<body>
+    
+    <div>
+        <p class="titulo"><b>Execício 2</b> </p>
+        <p>Ler o dia da semana (2 - 8) e mostrar se precisa ou não ir pra aula.</p>
+
+        <form method="get" action="exerc010.2.php"> <!--Meto get: solicita a inserção de algo e action: Refente onde será a ação do "get"-->
+
+            Dia da Semana: <input type="number" name="ds" min="2" max="8" required><br> <!--Informando o tipo e escolhendo um nome para este tipo "numero". logo, não aceita inserir letra-->
+
+            <!--Posso usar min e max no próprio HTML para suprir o defaul no PHP-->
+            <!--Logo, o default do PHP será inutilizado-->  
+            <!-- REQUIRED: Significa que precsia ser preenchido obrigatóriamente-->              
+
+            <input type="submit" value="Verificar"> <!--Novo input. Aqui se solicita um botão, com o nome calcular-->
+        
+        </form>
+
+    </div>
+</body>
+</html>
+ 

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+<head>
+    <link rel="stylesheet" href="_css/estilo.css"/>
+    <meta charset="UTF-8"/>
+    <title>Curso de PHP - CursoemVideo.com | Aula 08</title>
+</head>
+<body>
+
+    <p>Ler nome, ano de nascimento e gênero de uma pessoa, mostrando sua idade atual.</p>
+
+    <div>
+        <!--Action tem o nome da página php para onde vai ser enviada as informações-->
+        <!--method indica o método de envio, podenddo ser get ou post-->
+          <form method="get" action="http://localhost/aula08/exer02.php"> <!--Para criação de formulários-->
+
+                Nome: <input type="text" name="nome"><br>
+
+                Ano de Nascimento: <input type="number" name="ano"><br>
+             
+              <fieldset>    <!--Criand uma caixa de opções:-->
+
+                
+                    <legend>Gênero</legend>
+                    <input type="radio" name="g" id="masc" value="Masculino"> <!--Precisa ter um value para qeu sej amostrado no php -->
+                    <label for="masc">Masculino</label><br>
+
+                    <input type="radio" name="g" id="fem" value="Feminino"> <!--Precisa ter um value para qeu sej amostrado no php -->
+                    <label for="fem">Feminino</label><br>
+
+
+              </fieldset><br>  
+
+    
+                <input type="submit" value="Enviar"> 
+                <!--Outro input com um outro tipo "submit" onde cria um botão enviar. o value é o nome q  fica escrito no botão-->
+
+
+          </form><!--Formulário saira com um espaço para digitação numérica e um botão de enviar no html-->  
+
+       
+
+    </div>
+</body>
+</html>
+ 
